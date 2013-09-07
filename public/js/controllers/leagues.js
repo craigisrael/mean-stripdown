@@ -36,7 +36,7 @@ window.angular.module('ngff.controllers.leagues', [])
         };
 
         $scope.destroy = function(league){
-          league.$remote();
+          league.$remove();
           for (var i in $scope.leagues) {
             if ($scope.leagues[i] == league) {
               $scope.leagues.splice(i, 1);
